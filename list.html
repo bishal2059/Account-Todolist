@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="user.js"></script>
+    <script defer src="listscript.js"></script>
+    <link rel="icon" href="icon.jpg" type="image/icon type" />
+    <link rel="stylesheet" href="liststyle.css" />
+    <title>Organize your work</title>
+  </head>
+  <body>
+    <header>
+      <p class="greet">Welcome Back,<span class="user">User</span></p>
+      <div class="logo">
+        <div class="title">TO-DO-LIST</div>
+        <p class="subtitle">Organize your work easily</p>
+      </div>
+      <div class="info-bar">
+        <p class="top-date">Nov 13, 2022</p>
+        <ul class="nav">
+          <li class="help"><a href="#">⚙</a></li>
+          <li class="help"><a href="#">?</a></li>
+          <li class="logoout"><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="list">
+      <div class="option">
+        <div class="opt active" data-name="Active"><a href="#">Active</a></div>
+        <div class="opt hold" data-name="On Hold"><a href="#">On Hold</a></div>
+        <div class="opt completed" data-name="Completed">
+          <a href="#">Completed</a>
+        </div>
+        <div class="opt deleted" data-name="Deleted">
+          <a href="#">Deleted</a>
+        </div>
+      </div>
+      <div class="center">
+        <div class="search">
+          <div class="input">
+            <input
+              type="text"
+              placeholder="Add any task to the list"
+              id="list-search"
+            />
+            <button class="addlist">ADD</button>
+          </div>
+
+          <p class="name">Active List</p>
+          <div class="alllists">
+            <!-- <div class="listrow">
+              <p class="number">1)</p>
+              <p class="date">11/12/2022</p>
+              <p class="task">Do a exercise every evening</p>
+              <p class="h">↓</p>
+              <p class="c">✔</p>
+              <p class="d">✕</p>
+            </div>
+            <div class="listrow">
+              <p class="number">1)</p>
+              <p class="date">11/12/2022</p>
+              <p class="task">Do a exercise every evening</p>
+              <p class="u">&uarr;</p>
+              <p class="d">✕</p>
+            </div>
+            <div class="listrow">
+              <p class="number">1)</p>
+              <p class="date">11/12/2022</p>
+              <p class="task">Do a exercise every evening</p>
+              <p class="d">✕</p>
+            </div>
+            <div class="listrow">
+              <p class="number">1)</p>
+              <p class="date">11/12/2022</p>
+              <p class="task">Do a exercise every evening</p>
+              <p class="d">✕</p> -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>© Copyright: Bishal Sapkota 2022</footer>
+    <div class="error hidden">Maximum letters reached(50)</div>
+  </body>
+</html>

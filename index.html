@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="icon" href="icon.jpg" type="image/icon type" />
+    <link rel="stylesheet" href="mainstyle.css" />
+    <script defer src="user.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <p class="date">Nov 13 2022</p>
+      <div>TO-DO-LIST</div>
+      <span>Organize your work easily</span>
+    </header>
+    <main id="login">
+      <span>MAKE YOUR OWN LIST:</span>
+      <form autocomplete="off">
+        <input
+          type="text"
+          id="userLogin"
+          name="userLogin"
+          placeholder="Username"
+        />
+        <br />
+        <input
+          type="password"
+          id="passwordLogin"
+          name="passwordLogin"
+          placeholder="Password"
+        />
+        <br />
+        <button id="loginToAccount"><a href="list.html">Login</a></button>
+      </form>
+      <p class="sign">
+        Don't have an Account? <a href="#" id="clickToSignUp"> Sign Up!</a>
+      </p>
+    </main>
+    <main id="signup">
+      <span> One step close to Organized Life </span>
+      <form autocomplete="off">
+        <label for="fistName"> First Name: </label>
+        <input type="text" id="SignUpfirstName" name="firstName" /> <br />
+        <label for="lastName"> LastName: </label>
+        <input type="text" id="SignUplastName" name="lastName" /> <br />
+        <label for="gender"> Gender: </label>
+        <select id="SignUpgender" name="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <br />
+        <label for="birthYear">Date of Birth:</label>
+        <input type="date" name="birthYear" id="SignUpbirthYear" /> <br />
+        <label for="userName">UserName:</label>
+        <input type="text" name="userName" id="SignUpuserName" />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="SignUppassword" />
+        <br />
+        <label for="password_">Confirm Password:</label>
+        <input type="password" name="password_" id="SignUppassword_" />
+        <!-- <b>Weak Password</b> -->
+        <br />
+        <button id="clickToOpenAccount">SignUp</button>
+      </form>
+    </main>
+    <main class="congrats">
+      <h1>Congratulations!</h1>
+      <span>Your account has been successfully created.</span>
+      <p>Click here to <a href="#login" id="showHome"> Login!</a></p>
+    </main>
+    <footer>
+      <p>© Copyright: Bishal Sapkota 2022</p>
+    </footer>
+  </body>
+</html>
