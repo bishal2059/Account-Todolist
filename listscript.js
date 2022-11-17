@@ -27,7 +27,11 @@ const cEl = document.querySelector(".c");
 const dEl = document.querySelector(".d");
 const uEl = document.querySelector(".u");
 
+const mainPartEl = document.querySelector("#main_part");
+
 const logOut = document.querySelector(".logoout");
+const helpEl = document.querySelector(".help-center");
+const clickToHelp = document.querySelector(".clickToHelp");
 
 //Data Variables:
 const optionArray = [activeEl, holdEl, completedEl, deletedEl];
@@ -47,6 +51,7 @@ const init = function () {
 };
 
 const showActiveEl = function (runningEl) {
+  showMainPart();
   optionArray.forEach((el) => {
     el.style.backgroundColor = "#adadad";
     el.firstElementChild.style.color = "black";
@@ -210,6 +215,20 @@ const logOutUser = function () {
   persistData();
   window.location.href = "index.html";
 };
+
+const showMainPart = function () {
+  mainPartEl.classList.remove("hidden");
+  helpEl.classList.add("hidden");
+};
+
+const showHelpPart = function () {
+  mainPartEl.classList.add("hidden");
+  helpEl.classList.remove("hidden");
+  optionArray.forEach((el) => {
+    el.style.backgroundColor = "#adadad";
+    el.firstElementChild.style.color = "black";
+  });
+};
 //function calls:
 init();
 
@@ -242,16 +261,21 @@ allVisibleList.addEventListener("click", function (e) {
 window.addEventListener("keydown", function (e) {
   const keyPressed = e.key;
   if (keyPressed === "ArrowUp") {
+    if (!helpEl.classList.contains("hidden")) return;
+    showMainPart();
     if (optionArray.indexOf(runningEl) <= 0) return;
     runningEl = optionArray[optionArray.indexOf(runningEl) - 1];
     showActiveEl(runningEl);
   }
   if (keyPressed === "ArrowDown") {
+    if (!helpEl.classList.contains("hidden")) return;
+    showMainPart();
     if (optionArray.indexOf(runningEl) >= optionArray.length - 1) return;
     runningEl = optionArray[optionArray.indexOf(runningEl) + 1];
     showActiveEl(runningEl);
   }
   if (keyPressed === "Enter") {
+    if (!helpEl.classList.contains("hidden")) return;
     searchbox();
   }
   if (keyPressed === "Escape") {
@@ -260,3 +284,5 @@ window.addEventListener("keydown", function (e) {
 });
 
 logOut.addEventListener("click", logOutUser);
+
+clickToHelp.addEventListener("click", showHelpPart);

@@ -21,7 +21,7 @@
         <p class="top-date">Nov 13, 2022</p>
         <ul class="nav">
           <li class="help"><a href="#">⚙</a></li>
-          <li class="help"><a href="#">?</a></li>
+          <li class="help clickToHelp"><a href="#">?</a></li>
           <li class="logoout"><a href="#">Logout</a></li>
         </ul>
       </div>
@@ -37,7 +37,41 @@
           <a href="#">Deleted</a>
         </div>
       </div>
-      <div class="center">
+      <div class="center help-center hidden">
+        <p class="help-title">INFO ON THE APP</p>
+        <ul>
+          <li>You can use this app to make a list of your tasks.</li>
+          <li>Active Section: It contains all your active tasks.</li>
+          <li>Hold Section: It contains all the on Hold tasks.</li>
+          <li>Completed Section: It contains all the completed tasks.</li>
+          <li>Deleted Section: It contains all the deleted tasks.</li>
+          <li>
+            Click on
+            <p class="h">↓</p>
+            to hold your tasks.
+          </li>
+          <li>
+            Click on
+            <p class="u">↑</p>
+            to unhold to tasks.
+          </li>
+          <li>
+            Click on
+            <p class="c">✔</p>
+            to mark any task as completed.
+          </li>
+          <li>
+            Click on
+            <p class="d">✕</p>
+            to delete any tasks.
+          </li>
+          <li>Any deleted tasks are found in the Deleted section.</li>
+          <li>
+            Tasks removed from the Deleted section are permanently deleted.
+          </li>
+        </ul>
+      </div>
+      <div class="center" id="main_part">
         <div class="search">
           <div class="input">
             <input

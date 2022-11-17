@@ -75,10 +75,10 @@ header .info-bar .nav {
   background-color: red;
   color: white;
 }
-
+/* 
 .nav .help a {
   border-radius: 50%;
-}
+} */
 
 .list {
   display: flex;
@@ -201,7 +201,7 @@ footer {
   overflow: auto;
 }
 
-.listrow .h {
+.list .h {
   font-size: 20px;
   text-align: center;
   width: 5%;
@@ -211,7 +211,7 @@ footer {
   color: black;
   margin: 0 2px;
 }
-.listrow .u {
+.list .u {
   font-size: 20px;
   text-align: center;
   width: 5%;
@@ -222,7 +222,7 @@ footer {
   margin: 0 2px;
 }
 
-.listrow .c {
+.list .c {
   font-size: 20px;
   width: 5%;
   text-align: center;
@@ -292,4 +292,28 @@ footer {
 }
 .b {
   border: 3px solid brown;
+}
+
+.help-center ul {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.help-center p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.help-center ul li {
+  list-style-type: disc;
+  font-size: 20px;
+  margin: 2px 3px;
+}
+
+.help-center ul li p {
+  display: inline;
 }
