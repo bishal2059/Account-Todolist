@@ -20,7 +20,7 @@
       <div class="info-bar">
         <p class="top-date">Nov 13, 2022</p>
         <ul class="nav">
-          <li class="help"><a href="#">⚙</a></li>
+          <li class="help clickToset"><a href="#">⚙</a></li>
           <li class="help clickToHelp"><a href="#">?</a></li>
           <li class="logoout"><a href="#">Logout</a></li>
         </ul>
@@ -70,6 +70,41 @@
             Tasks removed from the Deleted section are permanently deleted.
           </li>
         </ul>
+      </div>
+      <div class="center admin-set hidden">
+        <div class="admin_info">
+          <p class="set-info">Account Information</p>
+          <p class="admin_data">
+            First Name: <span class="set-firstName"></span>
+          </p>
+          <p class="admin_data">LastName: <span class="set-lastName"></span></p>
+          <p class="admin_data">Date of Birth: <span class="set-dob"></span></p>
+          <p class="admin_data">Age: <span class="set-age"></span></p>
+          <p class="admin_data">Gender: <span class="set-gender"></span></p>
+          <p class="admin_data">Username: <span class="set-username"></span></p>
+        </div>
+        <div class="admin_change">
+          <button class="change_password">Change Password</button>
+          <form class="changepassword hidden">
+            <input
+              type="password"
+              placeholder="Current Password"
+              id="p_c-old-pass"
+            />
+            <input
+              type="password"
+              placeholder="New Password"
+              id="p_c-new-pass"
+            />
+            <input type="submit" value="Confirm" />
+          </form>
+          <button class="deleteAcc">Delete Account</button>
+          <form class="delAccount hidden">
+            <input type="text" placeholder="Username" id="d_a-username" />
+            <input type="password" placeholder="Password" id="d_a-password" />
+            <input type="submit" value="Confirm" />
+          </form>
+        </div>
       </div>
       <div class="center" id="main_part">
         <div class="search">

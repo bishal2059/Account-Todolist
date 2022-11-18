@@ -43,6 +43,10 @@ class User {
   getPassword() {
     return this.#password;
   }
+
+  changeUserPassword(val) {
+    this.#password = val;
+  }
   getFirstName() {
     return this.#firstName;
   }
@@ -54,6 +58,9 @@ class User {
   }
   getbirthDate() {
     return this.#birthDate;
+  }
+  getAge() {
+    return this.#age;
   }
   getactiveList() {
     return this.#activeList;
@@ -211,4 +218,4 @@ generateAllUsers();
 // );
 
 //Sample List:
-//['11/12/2022' 'Do exercise every evening']
+//['Nov 17, 22' 'Do exercise every evening']

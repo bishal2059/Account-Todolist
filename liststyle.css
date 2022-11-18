@@ -40,7 +40,7 @@ header .logo {
 
 header .title {
   flex: 1 0 50%;
-  font-size: 3.5rem;
+  font-size: 5rem;
 }
 
 header .subtitle {
@@ -210,6 +210,7 @@ footer {
   background-color: yellow;
   color: black;
   margin: 0 2px;
+  cursor: pointer;
 }
 .list .u {
   font-size: 20px;
@@ -220,6 +221,7 @@ footer {
   background-color: blue;
   color: white;
   margin: 0 2px;
+  cursor: pointer;
 }
 
 .list .c {
@@ -232,6 +234,7 @@ footer {
   background-color: green;
   color: whitesmoke;
   margin: 0 2px;
+  cursor: pointer;
 }
 
 .list .d {
@@ -244,6 +247,7 @@ footer {
   background-color: red;
   color: whitesmoke;
   margin: 0 2px;
+  cursor: pointer;
 }
 
 .hidden {
@@ -316,4 +320,86 @@ footer {
 
 .help-center ul li p {
   display: inline;
+}
+.admin-set {
+  width: 100%;
+}
+.admin_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin_info p {
+  margin: 3px;
+  align-self: center;
+  font-size: 1.8rem;
+}
+
+.admin_info .set-info {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
+
+.admin_info p span {
+  color: #3f3ff5;
+  transition: 1s;
+}
+
+.admin_info p span:hover {
+  color: #ff2f2f;
+  cursor: crosshair;
+  font-weight: bold;
+}
+
+.admin_change {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.admin_change button {
+  margin: 8px;
+  width: 30%;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 3px double greenyellow;
+  background-color: greenyellow;
+}
+
+.admin_change button:hover {
+  border: 3px double darkgoldenrod;
+  background-color: darkgoldenrod;
+  cursor: pointer;
+}
+
+.admin_change input[type="text"],
+input[type="password"] {
+  width: 35%;
+  height: 30px;
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-left: 8px;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 2px solid black;
+  transition: 1s;
+}
+.admin_change input[type="submit"] {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-color: transparent;
+  border: 3px solid grey;
+  border-radius: 7px;
+  height: 150%;
+  width: 17%;
+}
+
+.admin_change input[type="submit"]:hover {
+  background-color: black;
+  border-color: black;
+  color: whitesmoke;
 }
